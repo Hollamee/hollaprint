@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Website Pages"
+    files:
+      - file: "index.html"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - file: "about.html"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - file: "services.html"
+        label: "Services Page"
+        name: "services"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - file: "shop.html"
+        label: "Shop Page"
+        name: "shop"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - file: "pricing.html"
+        label: "Pricing Page"
+        name: "pricing"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - file: "contact.html"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - file: "order.html"
+        label: "Order Page"
+        name: "order"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }

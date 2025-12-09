@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — Holla Print</title><link rel="stylesheet" href="css/styles.css"></head><body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><img src="assets/img/logo.svg" alt="Holla Print logo" class="logo" /></a>
+    <nav class="nav" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html" class="btn btn-primary">Order Now</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="open menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="section container">
+    <h1>Contact</h1>
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
+      <div>
+        <h3>Reach Us</h3>
+        <p class="muted">WhatsApp: <a href="https://wa.me/2348055248113" target="_blank">08055248113</a></p>
+        <p class="muted">Email: <a href="mailto:hollaprint1@gmail.com">hollaprint1@gmail.com</a></p>
+        <p class="muted">Instagram: @hollaprint</p>
+      </div>
+      <div>
+        <h3>Send a message</h3>
+        <form onsubmit="event.preventDefault(); alert('Message sent — in production you would replace this with an email/send API')">
+          <input placeholder="Name" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;border:1px solid #e6e9ee"/>
+          <input placeholder="Email" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;border:1px solid #e6e9ee"/>
+          <textarea placeholder="Message" rows="5" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;border:1px solid #e6e9ee"></textarea>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="col">
+      <img src="assets/img/logo.svg" alt="Holla Print" style="height:40px"/>
+      <p class="muted">Premium printing &amp; branding</p>
+    </div>
+    <div class="col">
+      <p>WhatsApp: <a href="https://wa.me/2348055248113" target="_blank">08055248113</a></p>
+      <p>Email: <a href="mailto:hollaprint1@gmail.com">hollaprint1@gmail.com</a></p>
+      <p>IG: @hollaprint</p>
+    </div>
+    <div class="col">
+      <p>© <span id="yr"></span> Holla Print</p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

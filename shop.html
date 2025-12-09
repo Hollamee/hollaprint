@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Shop — Holla Print</title><link rel="stylesheet" href="css/styles.css"></head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><img src="assets/img/logo.svg" alt="Holla Print logo" class="logo" /></a>
+    <nav class="nav" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html" class="btn btn-primary">Order Now</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="open menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="section container">
+    <h1>Shop</h1>
+    <p class="muted">Add to cart and checkout via WhatsApp.</p>
+    <div class="shop-grid" style="margin-top:18px">
+      <div class="product"><div class="thumb"><img src="assets/mockups/product1.svg" alt=""></div><h4>Classic Tee</h4><p class="muted">100% cotton, printed to order.</p><div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center"><div class="muted">₦3,500</div><button class="btn btn-primary" onclick="addToCart('Classic Tee',3500)">Add to cart</button></div></div>
+      <div class="product"><div class="thumb"><img src="assets/mockups/product2.svg" alt=""></div><h4>Paper Bag - Medium</h4><p class="muted">Kraft paper bag with custom print.</p><div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center"><div class="muted">₦550</div><button class="btn btn-primary" onclick="addToCart('Paper Bag - Medium',550)">Add to cart</button></div></div>
+      <div class="product"><div class="thumb"><img src="assets/mockups/product3.svg" alt=""></div><h4>Custom Mug</h4><p class="muted">Ceramic mug, full color print.</p><div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center"><div class="muted">₦1,800</div><button class="btn btn-primary" onclick="addToCart('Custom Mug',1800)">Add to cart</button></div></div>
+      <div class="product"><div class="thumb"><img src="assets/mockups/product4.svg" alt=""></div><h4>Sticker Sheet (A4)</h4><p class="muted">High-quality vinyl stickers.</p><div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center"><div class="muted">₦700</div><button class="btn btn-primary" onclick="addToCart('Sticker Sheet (A4)',700)">Add to cart</button></div></div>
+      <div class="product"><div class="thumb"><img src="assets/mockups/product5.svg" alt=""></div><h4>Notebook</h4><p class="muted">A5 notebook printed cover.</p><div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center"><div class="muted">₦1,500</div><button class="btn btn-primary" onclick="addToCart('Notebook',1500)">Add to cart</button></div></div>
+      <div class="product"><div class="thumb"><img src="assets/mockups/product6.svg" alt=""></div><h4>Business Card (100)</h4><p class="muted">Full color business cards, 350gsm.</p><div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center"><div class="muted">₦4,000</div><button class="btn btn-primary" onclick="addToCart('Business Card (100)',4000)">Add to cart</button></div></div>
+    </div>
+
+    <div style="margin-top:18px" class="cart-banner">
+      <div>Cart total: <strong id="cart-total">₦0</strong></div>
+      <a id="checkout-link" class="btn btn-outline" href="#" target="_blank">Checkout via WhatsApp</a>
+    </div>
+
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="col">
+      <img src="assets/img/logo.svg" alt="Holla Print" style="height:40px"/>
+      <p class="muted">Premium printing &amp; branding</p>
+    </div>
+    <div class="col">
+      <p>WhatsApp: <a href="https://wa.me/2348055248113" target="_blank">08055248113</a></p>
+      <p>Email: <a href="mailto:hollaprint1@gmail.com">hollaprint1@gmail.com</a></p>
+      <p>IG: @hollaprint</p>
+    </div>
+    <div class="col">
+      <p>© <span id="yr"></span> Holla Print</p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
