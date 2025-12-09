@@ -6,47 +6,108 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Website Pages"
+  - name: "homepage"
+    label: "Home Page"
     files:
       - file: "index.html"
-        label: "Home Page"
+        label: "Homepage Content"
         name: "home"
         fields:
-          - { label: "Content", name: "body", widget: "markdown" }
 
-      - file: "about.html"
-        label: "About Page"
-        name: "about"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+          # HERO SECTION
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
 
-      - file: "services.html"
-        label: "Services Page"
-        name: "services"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Hero Text"
+            name: "hero_text"
+            widget: "text"
 
-      - file: "shop.html"
-        label: "Shop Page"
-        name: "shop"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Hero Subtext"
+            name: "hero_subtext"
+            widget: "string"
 
-      - file: "pricing.html"
-        label: "Pricing Page"
-        name: "pricing"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+          # FEATURED PRODUCTS
+          - label: "Featured Product 1 Name"
+            name: "fp1_name"
+            widget: "string"
+          - label: "Featured Product 1 Price"
+            name: "fp1_price"
+            widget: "string"
 
-      - file: "contact.html"
-        label: "Contact Page"
-        name: "contact"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Featured Product 2 Name"
+            name: "fp2_name"
+            widget: "string"
+          - label: "Featured Product 2 Price"
+            name: "fp2_price"
+            widget: "string"
 
-      - file: "order.html"
-        label: "Order Page"
-        name: "order"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Featured Product 3 Name"
+            name: "fp3_name"
+            widget: "string"
+          - label: "Featured Product 3 Price"
+            name: "fp3_price"
+            widget: "string"
+
+          - label: "Featured Product 4 Name"
+            name: "fp4_name"
+            widget: "string"
+          - label: "Featured Product 4 Price"
+            name: "fp4_price"
+            widget: "string"
+
+          # SERVICES SECTION
+          - label: "Services Title"
+            name: "services_title"
+            widget: "string"
+
+          - label: "Services Subtitle"
+            name: "services_subtitle"
+            widget: "string"
+
+          - label: "Service 1 Title"
+            name: "svc1_name"
+            widget: "string"
+          - label: "Service 1 Description"
+            name: "svc1_desc"
+            widget: "string"
+
+          - label: "Service 2 Title"
+            name: "svc2_name"
+            widget: "string"
+          - label: "Service 2 Description"
+            name: "svc2_desc"
+            widget: "string"
+
+          - label: "Service 3 Title"
+            name: "svc3_name"
+            widget: "string"
+          - label: "Service 3 Description"
+            name: "svc3_desc"
+            widget: "string"
+
+          # WHY SECTION
+          - label: "Why Section Title"
+            name: "why_title"
+            widget: "string"
+
+          - label: "Reason 1 Title"
+            name: "why1_title"
+            widget: "string"
+          - label: "Reason 1 Description"
+            name: "why1_desc"
+            widget: "string"
+
+          - label: "Reason 2 Title"
+            name: "why2_title"
+            widget: "string"
+          - label: "Reason 2 Description"
+            name: "why2_desc"
+            widget: "string"
+
+          - label: "Reason 3 Title"
+            name: "why3_title"
+            widget: "string"
+          - label: "Reason 3 Description"
+            name: "why3_desc"
+            widget: "string"
