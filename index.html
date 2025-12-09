@@ -10,80 +10,147 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand"><img src="assets/img/logo.svg" alt="Holla Print logo" class="logo" /></a>
+
     <nav class="nav" id="site-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="shop.html">Shop</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="contact.html">Contact</a>
-      <a href="order.html" class="btn btn-primary">Order Now</a>
+      <a data-cms="nav_home" href="index.html">Home</a>
+      <a data-cms="nav_about" href="about.html">About</a>
+      <a data-cms="nav_services" href="services.html">Services</a>
+      <a data-cms="nav_shop" href="shop.html">Shop</a>
+      <a data-cms="nav_pricing" href="pricing.html">Pricing</a>
+      <a data-cms="nav_contact" href="contact.html">Contact</a>
+      <a data-cms="nav_cta" href="order.html" class="btn btn-primary">Order Now</a>
     </nav>
+
     <button class="nav-toggle" id="nav-toggle" aria-label="open menu">☰</button>
   </div>
 </header>
 
 <main>
+
+  <!-- cms:start hero -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>Premium Printing &amp; Branding That Brings Your Ideas to Life</h1>
-        <p>Quality prints. Fast delivery. Beautiful branding for businesses, events, and creators.</p>
+        <h1 data-cms="hero_title">Premium Printing & Branding That Brings Your Ideas to Life</h1>
+        <p data-cms="hero_text">Quality prints. Fast delivery. Beautiful branding for businesses, events, and creators.</p>
+
         <div class="hero-ctas">
           <a href="order.html" class="btn btn-primary">Order Now</a>
           <a href="shop.html" class="btn btn-outline">Visit Shop</a>
         </div>
-        <p class="muted" style="margin-top:12px">Need a quick order? Chat on WhatsApp: <a href="https://wa.me/2348055248113" target="_blank">08055248113</a></p>
+
+        <p class="muted" style="margin-top:12px" data-cms="hero_subtext">
+          Need a quick order? Chat on WhatsApp:
+          <a href="https://wa.me/2348055248113" target="_blank">08055248113</a>
+        </p>
       </div>
+
       <aside class="hero-panel">
         <h3 style="margin:0 0 10px 0">Featured Products</h3>
+
         <ul class="shop-grid" style="list-style:none;padding:0;margin:0">
-          <li class="product"><div class="thumb"><img src="assets/mockups/product1.svg" alt=""></div><h4 style="margin:10px 0 6px 0">Classic Tee</h4><div class="muted">₦3,500</div></li>
-          <li class="product"><div class="thumb"><img src="assets/mockups/product2.svg" alt=""></div><h4 style="margin:10px 0 6px 0">Paper Bag - Medium</h4><div class="muted">₦550</div></li>
-          <li class="product"><div class="thumb"><img src="assets/mockups/product3.svg" alt=""></div><h4 style="margin:10px 0 6px 0">Custom Mug</h4><div class="muted">₦1,800</div></li>
-          <li class="product"><div class="thumb"><img src="assets/mockups/product4.svg" alt=""></div><h4 style="margin:10px 0 6px 0">Sticker Sheet (A4)</h4><div class="muted">₦700</div></li>
+
+          <li class="product">
+            <div class="thumb"><img src="assets/mockups/product1.svg" alt=""></div>
+            <h4 data-cms="fp1_name" style="margin:10px 0 6px 0">Classic Tee</h4>
+            <div data-cms="fp1_price" class="muted">₦3,500</div>
+          </li>
+
+          <li class="product">
+            <div class="thumb"><img src="assets/mockups/product2.svg" alt=""></div>
+            <h4 data-cms="fp2_name" style="margin:10px 0 6px 0">Paper Bag - Medium</h4>
+            <div data-cms="fp2_price" class="muted">₦550</div>
+          </li>
+
+          <li class="product">
+            <div class="thumb"><img src="assets/mockups/product3.svg" alt=""></div>
+            <h4 data-cms="fp3_name" style="margin:10px 0 6px 0">Custom Mug</h4>
+            <div data-cms="fp3_price" class="muted">₦1,800</div>
+          </li>
+
+          <li class="product">
+            <div class="thumb"><img src="assets/mockups/product4.svg" alt=""></div>
+            <h4 data-cms="fp4_name" style="margin:10px 0 6px 0">Sticker Sheet (A4)</h4>
+            <div data-cms="fp4_price" class="muted">₦700</div>
+          </li>
+
         </ul>
       </aside>
     </div>
   </section>
+  <!-- cms:end hero -->
 
+  <!-- cms:start services -->
   <section class="services-snapshot container">
-    <h2 style="margin:0 0 6px 0">Our Services</h2>
-    <p class="muted">From apparel to packaging — we print it all.</p>
-    <div class="grid-3" style="margin-top:18px">
-      <div class="card"><div style="font-size:28px">👕</div><h4>T-Shirt Printing</h4><p class="muted">Custom tees, polos & uniforms.</p></div>
-      <div class="card"><div style="font-size:28px">🎁</div><h4>Souvenirs</h4><p class="muted">Mugs, pens, notebooks & gift packs.</p></div>
-      <div class="card"><div style="font-size:28px">🛍️</div><h4>Paper Bags</h4><p class="muted">Branded packaging for your business.</p></div>
-    </div>
-  </section>
+    <h2 data-cms="services_title" style="margin:0 0 6px 0">Our Services</h2>
+    <p class="muted" data-cms="services_subtitle">From apparel to packaging — we print it all.</p>
 
-  <section class="why-choose container section">
-    <h2>Why Choose Holla Print</h2>
-    <div class="grid-3" style="margin-top:14px">
-      <div class="card"><strong>Fast Delivery</strong><p class="muted">24–72 hours depending on order.</p></div>
-      <div class="card"><strong>Premium Quality</strong><p class="muted">Sharp colors & premium finish.</p></div>
-      <div class="card"><strong>Bulk Orders</strong><p class="muted">Discounts for large orders.</p></div>
+    <div class="grid-3" style="margin-top:18px">
+      <div class="card">
+        <div style="font-size:28px">👕</div>
+        <h4 data-cms="svc1_name">T-Shirt Printing</h4>
+        <p class="muted" data-cms="svc1_desc">Custom tees, polos & uniforms.</p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:28px">🎁</div>
+        <h4 data-cms="svc2_name">Souvenirs</h4>
+        <p class="muted" data-cms="svc2_desc">Mugs, pens, notebooks & gift packs.</p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:28px">🛍️</div>
+        <h4 data-cms="svc3_name">Paper Bags</h4>
+        <p class="muted" data-cms="svc3_desc">Branded packaging for your business.</p>
+      </div>
     </div>
   </section>
+  <!-- cms:end services -->
+
+  <!-- cms:start why -->
+  <section class="why-choose container section">
+    <h2 data-cms="why_title">Why Choose Holla Print</h2>
+
+    <div class="grid-3" style="margin-top:14px">
+      <div class="card">
+        <strong data-cms="why1_title">Fast Delivery</strong>
+        <p class="muted" data-cms="why1_desc">24–72 hours depending on order.</p>
+      </div>
+
+      <div class="card">
+        <strong data-cms="why2_title">Premium Quality</strong>
+        <p class="muted" data-cms="why2_desc">Sharp colors & premium finish.</p>
+      </div>
+
+      <div class="card">
+        <strong data-cms="why3_title">Bulk Orders</strong>
+        <p class="muted" data-cms="why3_desc">Discounts for large orders.</p>
+      </div>
+    </div>
+  </section>
+  <!-- cms:end why -->
 
 </main>
+
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="col">
       <img src="assets/img/logo.svg" alt="Holla Print" style="height:40px"/>
-      <p class="muted">Premium printing &amp; branding</p>
+      <p class="muted" data-cms="footer_tagline">Premium printing & branding</p>
     </div>
+
     <div class="col">
-      <p>WhatsApp: <a href="https://wa.me/2348055248113" target="_blank">08055248113</a></p>
-      <p>Email: <a href="mailto:hollaprint1@gmail.com">hollaprint1@gmail.com</a></p>
-      <p>IG: @hollaprint</p>
+      <p data-cms="footer_whatsapp">WhatsApp: 08055248113</p>
+      <p data-cms="footer_email">Email: hollaprint1@gmail.com</p>
+      <p data-cms="footer_ig">IG: @hollaprint</p>
     </div>
+
     <div class="col">
       <p>© <span id="yr"></span> Holla Print</p>
     </div>
   </div>
 </footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
-

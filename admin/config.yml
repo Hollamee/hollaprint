@@ -7,22 +7,43 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: "homepage"
-    label: "Home Page"
+    label: "Homepage"
     files:
       - file: "index.html"
         label: "Homepage Content"
         name: "home"
         fields:
 
+          # HEADER NAVIGATION
+          - label: "Nav: Home"
+            name: "nav_home"
+            widget: "string"
+          - label: "Nav: About"
+            name: "nav_about"
+            widget: "string"
+          - label: "Nav: Services"
+            name: "nav_services"
+            widget: "string"
+          - label: "Nav: Shop"
+            name: "nav_shop"
+            widget: "string"
+          - label: "Nav: Pricing"
+            name: "nav_pricing"
+            widget: "string"
+          - label: "Nav: Contact"
+            name: "nav_contact"
+            widget: "string"
+          - label: "Nav: Button Text"
+            name: "nav_cta"
+            widget: "string"
+
           # HERO SECTION
           - label: "Hero Title"
             name: "hero_title"
             widget: "string"
-
           - label: "Hero Text"
             name: "hero_text"
             widget: "text"
-
           - label: "Hero Subtext"
             name: "hero_subtext"
             widget: "string"
@@ -56,11 +77,10 @@ collections:
             name: "fp4_price"
             widget: "string"
 
-          # SERVICES SECTION
+          # SERVICES
           - label: "Services Title"
             name: "services_title"
             widget: "string"
-
           - label: "Services Subtitle"
             name: "services_subtitle"
             widget: "string"
@@ -87,7 +107,7 @@ collections:
             widget: "string"
 
           # WHY SECTION
-          - label: "Why Section Title"
+          - label: "Why Title"
             name: "why_title"
             widget: "string"
 
@@ -110,4 +130,18 @@ collections:
             widget: "string"
           - label: "Reason 3 Description"
             name: "why3_desc"
+            widget: "string"
+
+          # FOOTER
+          - label: "Footer Tagline"
+            name: "footer_tagline"
+            widget: "string"
+          - label: "Footer WhatsApp"
+            name: "footer_whatsapp"
+            widget: "string"
+          - label: "Footer Email"
+            name: "footer_email"
+            widget: "string"
+          - label: "Footer Instagram"
+            name: "footer_ig"
             widget: "string"
